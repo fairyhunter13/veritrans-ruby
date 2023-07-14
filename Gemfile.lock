@@ -1,13 +1,13 @@
 PATH
   remote: .
   specs:
-    veritrans (2.4.0)
+    veritrans (2.4.1)
       excon (~> 0.20)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    excon (0.85.0)
+    excon (0.100.0)
     minitest (5.14.4)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)

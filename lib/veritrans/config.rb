@@ -158,12 +158,23 @@ class Veritrans
         "@api_host=#{@api_host.inspect} " +
         "@server_key=#{@server_key.inspect} " +
         "@client_key=#{@client_key.inspect} " +
-        "@http_options=#{@http_options.inspect}>"
+        "@http_options=#{@http_options.inspect}>" +
+        "@idempotency_key=#{@idempotency_key.inspect}>" +
+        "@append_notif_url=#{@append_notif_url.inspect}>" +
+        "@override_notif_url=#{@override_notif_url.inspect}>"
     end
 
     private
 
-    AVAILABLE_KEYS = [:server_key, :client_key, :api_host, :http_options]
+    AVAILABLE_KEYS = [
+      :server_key,
+      :client_key,
+      :api_host,
+      :http_options,
+      :idempotency_key,
+      :append_notif_url,
+      :override_notif_url
+    ]
 
     def apply(hash)
       hash.each do |key, value|
